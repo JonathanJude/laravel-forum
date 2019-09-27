@@ -17,10 +17,10 @@
 <body>
     <div id="app">
     <header id="header">
-        {{-- <img src="{{ asset('images/logo.png') }}" alt="MyForum" height="60"> --}}
+        {{-- <img src="{{ asset('images/logo.png') }}" alt="MyForum" height="60">  {{ base_path() }}/public/images/avatar.png --}}
         <h1 class="text-success">MyForum</h1>
         @auth
-            <a href=""><img src="{{ base_path() }}/public/images/avatar.png" alt="Img" width="50" height="50" class="avatar"></a>
+            <a href=""><img src="{{ asset('images/avatar.png') }}" alt="Img" width="50" height="50" class="avatar"></a>
         @endauth
         @guest
     <a href="{{ route('login') }}">LOGIN</a>
@@ -30,7 +30,7 @@
     <div class="container-fluid">
         <aside class="profile">
             @auth
-            <img src="{{ base_path() }}/public/images/avatar.png" alt="Name Surname">
+            <img src="{{ asset('images/avatar.png') }}" alt="Name Surname">
             <h1> {{ auth()->user()->name }}</h1>
             <ul>
             <li><a href="{{route('home') }}">Home</a></li>
