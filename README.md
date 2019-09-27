@@ -1,6 +1,6 @@
 # Simple Forum App
 
-This is a simple forum app built with Laravel 6 & Vue.js 2
+This is a simple forum app built with Laravel 6 & Vue.js 2 with a simple responsive design
 
 ## Installing
 
